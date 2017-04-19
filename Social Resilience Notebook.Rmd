@@ -8,7 +8,9 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook for preliminary S
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
 ```{r}
-hist(p2010_dat$SALE_PRICE[p2010_dat$SALE_PRICE<=2000000], main="Histogram of Sale Prices in 2010")
+setwd('C:/Users/nelsonks/Box Sync/Kate_Kevona/NashvilleFloodData')
+p2010_dat<-readRDS("parceldata2010.RDS")#save files as RDS
+hist(p2010_dat$SALE_PRICE[p2010_dat$SALE_PRICE<=2000000], main="Histogram of Property Sale Prices in 2010")
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
